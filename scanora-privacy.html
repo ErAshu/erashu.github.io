@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Scanora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: rgba(22, 27, 34, 0.75);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-color: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --badge-bg: rgba(56, 189, 248, 0.1);
+            --badge-border: rgba(56, 189, 248, 0.25);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --card-bg: rgba(255, 255, 255, 0.85);
+                --card-border: rgba(0, 0, 0, 0.06);
+                --text-main: #0f172a;
+                --text-secondary: #64748b;
+                --accent-color: #0284c7;
+                --accent-glow: rgba(2, 132, 199, 0.1);
+                --badge-bg: rgba(2, 132, 199, 0.08);
+                --badge-border: rgba(2, 132, 199, 0.2);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 760px;
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 44px;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.25);
+        }
+
+        header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-color);
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 12px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            font-size: 0.96rem;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: var(--accent-glow);
+            border: 1px solid var(--badge-border);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-main);
+            margin: 0;
+            font-size: 0.92rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid var(--card-border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="badge">Scanora Legal</div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Scan, create, and share QR codes & barcodes securely.</p>
+        <span class="last-updated">Last Updated: August 2026</span>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Overview</h2>
+            <p>
+                <strong>Scanora</strong> is developed as an offline-first utility application. Your privacy is paramount: Scanora does not require user accounts, does not collect personal identity information, and does not upload your scanned or generated barcodes/QR codes to external servers.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Device Permissions & Data Access</h2>
+            <p>To provide core functionalities, Scanora requests specific device permissions:</p>
+            <ul>
+                <li><strong>Camera:</strong> Used exclusively in real-time to scan QR codes and barcodes. Camera frames are processed locally on your device and are never recorded, saved, or transmitted to any server.</li>
+                <li><strong>Photo Library / Storage:</strong> Used only when you choose to scan an image from your gallery or save an exported QR/barcode image to your device.</li>
+            </ul>
+        </section>
+
+        <div class="highlight-box">
+            <p><strong>On-Device Processing:</strong> All scanning algorithms, text recognition, and barcode generation run locally using your device's native hardware and APIs.</p>
+        </div>
+
+        <section>
+            <h2>3. Data Collection and Tracking</h2>
+            <p>
+                Scanora does not collect, store, sell, or rent your personal data. We do not track your activity across third-party apps or websites, and we do not use third-party analytics SDKs that profile users.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Third-Party Links & Content</h2>
+            <p>
+                When you scan a QR code or barcode containing a web link (URL), opening that link will launch your device’s default web browser or app. Those external websites operate under their own independent privacy policies.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Changes to This Policy</h2>
+            <p>
+                We may update our Privacy Policy periodically. Any changes will be posted directly to this page with an updated revision date.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Contact Us</h2>
+            <p>
+                If you have questions, feedback, or concerns regarding this Privacy Policy, please reach out via email at:
+            </p>
+            <p>
+                <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Scanora. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
